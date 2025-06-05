@@ -6,7 +6,7 @@ import React from 'react';
 export default function Header() {
   return (
     <header className="bg-white text-white p-4 shadow-md border-t-4 border-green-500">
-      <div className="max-w-screen-lg mx-auto flex justify-between items-center">
+      <div className="max-w-screen-xl mx-auto flex justify-between items-center">
         <div className="flex items-center gap-2">
           <img src="/logo.png" alt="Comedy on the Loose" className="h-22 w-auto" />
         </div>
