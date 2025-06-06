@@ -10,7 +10,7 @@ export default function Header() {
         <div className="flex items-center gap-2">
           <img src="/logo.png" alt="Comedy on the Loose" className="h-22 w-auto" />
         </div>
-        <nav className="space-x-4 text-sm font-semibold">
+        <nav className="space-x-4 text-sm text-black font-semibold">
           <a href="#about" className="hover:text-green-500">About Us</a>
           <a href="#sketches" className="hover:text-green-500">Sketches</a>
           <a href="#watch" className="hover:text-green-500">Watch</a>
