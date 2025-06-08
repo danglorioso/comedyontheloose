@@ -6,7 +6,7 @@ import { FaPlayCircle, FaCalendarAlt } from "react-icons/fa";
 export default function WatchUs() {
   return (
     <section className="bg-[#3dbc27] py-3">
-      <div className="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center text-white text-center md:text-left gap-8">
+      <div className="max-w-4xl mx-auto flex flex-col md:flex-row justify-items-end-safe items-center text-white text-center md:text-left gap-8">
         {/* Watch Online */}
         <div className="flex flex-col md:flex-row items-center text-right gap-4">
           <h2 className="text-3xl font-bold leading-tight">
