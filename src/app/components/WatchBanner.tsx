@@ -14,7 +14,7 @@ export default function WatchUs() {
           </h2>
           <a
             href="#episodes"
-            className="flex items-center gap-2 bg-[#73B666] border border-white px-6 py-3 rounded-md font-bold text-white hover:bg-[#6ac954] transition-colors"
+            className="flex items-center gap-2 bg-[#73B666] border border-white px-6 py-3 rounded-md font-bold text-white hover:bg-[#6AC954] transition-colors"
           >
             <FaPlayCircle className="w-5 h-5" />
             ONLINE EPISODES
