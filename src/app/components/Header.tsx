@@ -24,7 +24,7 @@ export default function Header() {
         </div>
         <nav className="flex gap-3 text-sm text-black">
           {navItems.map(({ label, href }) => {
-            const isActive = href === "/" ? pathname === "/" : pathname.includes(href.replace("#", ""));
+            const isActive = pathname === href;
             return (
               <a
                 key={label}
