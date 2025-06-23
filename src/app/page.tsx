@@ -3,9 +3,9 @@ import WhatIs from "./components/WhatIs";
 
 export default function Home() {
   return (
-    <>
+    <div>
       <WatchBanner/>
       <WhatIs/>
-    </>
+    </div>
   );
 }
