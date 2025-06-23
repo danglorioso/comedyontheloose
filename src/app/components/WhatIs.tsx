@@ -4,35 +4,47 @@ import React from "react";
 import Image from "next/image";
 
 export default function WhatIs() {
-
   return (
     <section className="bg-white py-8">
-        <div className="columns-2 max-w-4xl mx-auto px-4">
-            <div>
-                <h2 className="text-3xl font-bold mb-4 text-center">What is Comedy on the Loose?</h2>
-                <p className="text-lg text-gray-700 leading-relaxed">
-                    Comedy on the Loose is a weekly sketch comedy show that brings you the best in local humor and satire. 
-                    Our talented cast and crew work tirelessly to create original sketches that reflect the unique culture and quirks of our community.
-                </p>
-                <p className="mt-4 text-lg text-gray-700 leading-relaxed">
-                    From hilarious parodies to clever social commentary, each episode is packed with laughs and surprises. 
-                    Join us every week for a fresh dose of comedy that will keep you entertained and engaged.
-                </p>
-                <p className="mt-4 text-lg text-gray-700 leading-relaxed">
-                    Whether you're a long-time fan or new to the show, we invite you to tune in and experience the joy of Comedy on the Loose. 
-                    Get ready for a wild ride of laughter and fun!
-                </p>
-            </div>
-            <div className="mt-8 md:mt-0">
-                <Image
-                    width={500}
-                    height={300}
-                    src="/images/danandcam.png"
-                    alt="Dan & Cam of Comedy on the Loose"
-                    className="w-full h-auto rounded-lg shadow-lg"
-                />
-            </div>
+      <div className="max-w-screen-xl mx-auto px-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          {/* Text Column */}
+          <div>
+            <h2 className="text-3xl font-bold mb-6 text-[#55595e]">
+              WHAT IS "COMEDY ON THE LOOSE"?
+            </h2>
+            <p className="text-lg text-gray-700 leading-relaxed mb-4">
+              Step into the world of laughter with <strong>Comedy on the Loose</strong>! 
+              Premiering in April 2016 by the dynamic duo Dan and Cam, Comedy on the Loose (COTL) 
+              proudly calls Littleton Community Television (LCTV) its exclusive home, standing as 
+              the cable network's sole sketch-comedy television show.
+            </p>
+            <p className="text-lg text-gray-700 leading-relaxed mb-4">
+              The journey kicked off in 2014 with homemade comedy videos, evolving into the 
+              creation of full-length episodes that keep the chuckles rolling for over three seasons. 
+              Bringing their comedic genius to life as stars and creators, Dan and Cam are the 
+              driving force of the show, wearing multiple hats as writers, set designers, directors, 
+              producers, and video editors, crafting a genuine two-person production. Their enduring 
+              passion for humor ignites the stage, propelling their comedic escapades forward.
+            </p>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              Don't miss a beat – tune in for new full-length episodes released monthly on LCTV 
+              and enjoy fresh sketches on our YouTube channel every Friday at 6:00pm.
+            </p>
+          </div>
+
+          {/* Image Column */}
+          <div className="flex justify-center lg:justify-end">
+            <Image
+              width={500}
+              height={300}
+              src="/images/danandcam.png"
+              alt="Dan & Cam of Comedy on the Loose"
+              className="w-full max-w-md h-auto rounded-lg shadow-lg"
+            />
+          </div>
         </div>
+      </div>
     </section>
   );
 }
