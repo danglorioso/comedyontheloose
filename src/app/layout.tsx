@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Oswald } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,12 +34,25 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={geistMono.className}>
       <body
-        className={`${oswald.variable} antialiased`}
-      >      
-        <Header />
-        {children}
+        className={`${geistSans.variable} bg-black antialiased flex flex-col min-h-screen`}
+      >
+        {/* Header */}
+        <div className="flex-shrink-0">
+          <Header />
+        </div>
+
+        {/* Main Content */}
+        <main className="flex-grow">{children}</main>
+
+        {/* Footer */}
+        <div className="flex-shrink-0">
+          {/* <Footer /> */}
+        </div>
+      
+        {/* Analytics */}
+        <Analytics />
       </body>
     </html>
   );
