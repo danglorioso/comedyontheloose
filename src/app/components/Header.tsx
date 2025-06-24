@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const navItems = [
@@ -20,7 +21,9 @@ export default function Header() {
     <header className="bg-white p-4 shadow-md border-t-4 border-[#3dbc27] mb-2">
       <div className="max-w-screen-xl px-15 mx-auto flex justify-between items-center">
         <div className="flex items-center gap-2">
-          <img src="/logo.png" alt="Comedy on the Loose" className="h-22 w-auto" />
+          <Link href="/" className="text-2xl font-bold text-[#3dbc27]">
+            <img src="/logo.png" alt="Comedy on the Loose" className="h-22 w-auto" />
+          </Link>
         </div>
         <nav className="flex gap-3 text-sm text-black">
           {navItems.map(({ label, href }) => {
