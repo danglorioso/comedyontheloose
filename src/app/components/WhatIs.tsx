@@ -13,6 +13,7 @@ export default function WhatIs() {
             <h2 className="text-3xl font-bold mb-6 text-[#55595e]">
               WHAT IS "COMEDY ON THE LOOSE"?
             </h2>
+            
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
               Step into the world of laughter with <strong>Comedy on the Loose</strong>! 
               Premiering in April 2016 by the dynamic duo Dan and Cam, Comedy on the Loose (COTL) 
