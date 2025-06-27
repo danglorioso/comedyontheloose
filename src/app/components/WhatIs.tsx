@@ -44,6 +44,18 @@ export default function WhatIs() {
             />
           </div>
         </div>
+        <div className="w-full mt-8 py-8">
+          <div className="aspect-w-16 aspect-h-9 mx-auto w-full max-w-screen-xl px-4">
+            <iframe
+              className="w-full h-full border-5 border-solid border-[#3dbc27]"
+              src="https://www.youtube.com/embed/Oni4QTp7dEU"
+              title="Comedy on the Loose Promo"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
       </div>
     </section>
   );
