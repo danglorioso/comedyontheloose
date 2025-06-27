@@ -7,9 +7,10 @@ export default function WhatIs() {
   return (
     <section className="bg-white py-8">
       <div className="max-w-screen-xl mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mt-8">
           {/* Text Column */}
           <div>
+            <div className="border-t-1 border-[#3dbc27] mb-8"></div>
             <h2 className="text-3xl font-bold mb-6 text-[#55595e]">
               WHAT IS "COMEDY ON THE LOOSE"?
             </h2>
@@ -27,11 +28,14 @@ export default function WhatIs() {
               producers, and video editors, crafting a genuine two-person production. Their enduring 
               passion for humor ignites the stage, propelling their comedic escapades forward.
             </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-lg text-gray-700 leading-relaxed pb-16">
               Don't miss a beat – tune in for new full-length episodes released monthly on LCTV 
               and enjoy fresh sketches on our YouTube channel every Friday at 6:00pm.
             </p>
+            <div className="border-t-1 border-[#3dbc27] mb-2"></div>
           </div>
+
+            
 
           {/* Image Column */}
           <div className="flex justify-center lg:justify-end">
