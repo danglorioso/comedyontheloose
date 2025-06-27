@@ -25,15 +25,15 @@ export default function Header() {
             <img src="/logo.png" alt="Comedy on the Loose" className="h-22 w-auto" />
           </Link>
         </div>
-        <nav className="flex gap-3 text-sm text-black">
+        <nav className="flex gap-2 text-sm text-black">
           {navItems.map(({ label, href }) => {
             const isActive = pathname === href;
             return (
               <a
                 key={label}
                 href={href}
-                className={`px-3 py-2 px-4 transition-colors duration-200
-                  ${isActive ? "bg-[#3dbc27] text-white" : "hover:bg-[#3dbc27] hover:text-white"}`}
+                className={`px-3 py-2 px-4 transition-colors duration-200 text-base
+                  ${isActive ? "bg-[#3dbc27] text-white font-normal text-base" : "hover:bg-[#3dbc27] hover:text-white"}`}
               >
                 {label}
               </a>
