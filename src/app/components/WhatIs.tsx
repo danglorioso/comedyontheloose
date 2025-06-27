@@ -2,21 +2,22 @@
 
 import React from "react";
 import Image from "next/image";
+import { FaArrowRight } from "react-icons/fa";
 
 export default function WhatIs() {
   return (
     <section className="bg-white py-8">
-      <div className="max-w-screen-xl mx-auto px-4">
+      <div className="max-w-screen-xl px-15 mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mt-8">
           {/* Text Column */}
           <div>
             <div className="border-t-1 border-[#3dbc27] mb-8"></div>
-            <h2 className="text-3xl font-bold mb-6 text-[#55595e]">
+            <h2 className="text-4xl font-bold mb-8 text-[#55595e]">
               WHAT IS "COMEDY ON THE LOOSE"?
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
               Step into the world of laughter with <strong>Comedy on the Loose</strong>! 
-              Premiering in April 2016 by the dynamic duo Dan and Cam, Comedy on the Loose (COTL) 
+              Premiering in April 2016 by the duo Dan and Cam, Comedy on the Loose (COTL) 
               proudly calls Littleton Community Television (LCTV) its exclusive home, standing as 
               the cable network's sole sketch-comedy television show.
             </p>
@@ -28,10 +29,17 @@ export default function WhatIs() {
               producers, and video editors, crafting a genuine two-person production. Their enduring 
               passion for humor ignites the stage, propelling their comedic escapades forward.
             </p>
-            <p className="text-lg text-gray-700 leading-relaxed pb-16">
+            <p className="text-lg text-gray-700 leading-relaxed pb-6">
               Don't miss a beat – tune in for new full-length episodes released monthly on LCTV 
               and enjoy fresh sketches on our YouTube channel every Friday at 6:00pm.
             </p>
+              <a 
+                href="#about-us" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-[#3dbc27] text-white px-6 py-3 shadow hover:scale-105 transition-transform duration-200 mb-8">
+                  READ MORE <FaArrowRight />
+              </a>
             <div className="border-t-1 border-[#3dbc27] mb-2"></div>
           </div>
 
