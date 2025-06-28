@@ -7,8 +7,8 @@ import { FaArrowRight } from "react-icons/fa";
 export default function WhatIs() {
   return (
     <section className="bg-white py-8">
-      <div className="max-w-screen-xl px-15 mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mt-8">
+      <div className="max-w-screen-xl px-16 mx-auto px-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-center mt-8">
           {/* Text Column */}
           <div>
             <div className="border-t-1 border-[#3dbc27] mb-8"></div>
@@ -29,7 +29,7 @@ export default function WhatIs() {
               producers, and video editors, crafting a genuine two-person production. Their enduring 
               passion for humor ignites the stage, propelling their comedic escapades forward.
             </p>
-            <p className="text-lg text-gray-700 leading-relaxed pb-6">
+            <p className="text-lg text-gray-700 leading-relaxed mb-8">
               Don't miss a beat – tune in for new full-length episodes released monthly on LCTV 
               and enjoy fresh sketches on our YouTube channel every Friday at 6:00pm.
             </p>
@@ -43,12 +43,10 @@ export default function WhatIs() {
             <div className="border-t-1 border-[#3dbc27] mb-2"></div>
           </div>
 
-            
-
           {/* Image Column */}
           <div className="flex justify-center lg:justify-end">
             <Image
-              width={500}
+              width={600}
               height={300}
               src="/images/danandcam.png"
               alt="Dan & Cam of Comedy on the Loose"

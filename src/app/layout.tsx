@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Oswald } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
@@ -48,7 +49,7 @@ export default function RootLayout({
 
         {/* Footer */}
         <div className="flex-shrink-0">
-          {/* <Footer /> */}
+          <Footer />
         </div>
       
         {/* Analytics */}
