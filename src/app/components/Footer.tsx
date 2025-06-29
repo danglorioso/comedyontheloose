@@ -5,7 +5,7 @@ import React from "react";
 export default function Footer() {
     return (
         <footer className="bg-slate-900 p-4 shadow-md border-t-4 border-[#3dbc27]">
-            <div className="max-w-screen-lg mx-auto grid grid grid-cols-5 items-start gap-10 p-4">
+            <div className="max-w-screen-xl mx-auto grid grid grid-cols-5 items-start gap-10 p-4">
                 <div className="col-span-1 flex justify-end items-end">
                     <img src="/favicon.png" 
                          alt="Comedy on the Loose" 
