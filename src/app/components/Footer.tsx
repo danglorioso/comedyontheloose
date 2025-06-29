@@ -9,7 +9,7 @@ export default function Footer() {
                 <div className="col-span-1 flex justify-end items-end">
                     <img src="/favicon.png" 
                          alt="Comedy on the Loose" 
-                         className="h-25 w-auto" />
+                         className="h-25 w-auto mt-2" />
                 </div>
                 <div className="col-span-2">
                     <p className="text-3xl">About Us</p>
