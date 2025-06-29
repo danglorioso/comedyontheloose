@@ -17,8 +17,30 @@ export default function Footer() {
                     Comedy on the Loose, created by Dan and Cam in 2016, airs exclusively on Littleton Community Television and showcases their humorous journey from homemade videos to full-length, studio-produced episodes.
                     </p>
                 </div>
-                <div className="col-span-2">
+                <div className="col-span-2 mr-6">
                     <p className="text-3xl">Watch Us On</p>
+                    <div className="flex flex-row items-end gap-10 mt-2">
+                        <a
+                            href="https://cloud.castus.tv/vod/littleton/video/64025b373e11cd0008700758?page=HOME&type=live"
+                            target="_blank" // Open in new tab
+                            rel="noopener noreferrer"
+                            className="text-indigo-600 hover:text-slate-200 transition-colors duration-300"
+                        >
+                            <img src="/lctv.png" 
+                                alt="Comedy on the Loose" 
+                                className="h-22 w-auto" />
+                        </a>
+                        <a
+                            href="https://www.youtube.com/@comedyontheloose"
+                            target="_blank" // Open in new tab
+                            rel="noopener noreferrer"
+                            className="text-indigo-600 hover:text-slate-200 transition-colors duration-300"
+                        >
+                            <img src="/yt.png" 
+                                alt="Comedy on the Loose" 
+                                className="h-22 pb-2 pt-10 w-auto" /> 
+                        </a>
+                    </div>
                 </div>
             </div>
             <div className="text-center mt-6">
@@ -28,7 +50,7 @@ export default function Footer() {
                     href="https://danglorioso.com"
                     target="_blank" // Open in new tab
                     rel="noopener noreferrer"
-                    className="text-slate-500 hover:text-slate-200 transition-colors duration-300"
+                    className="text-indigo-600 hover:text-slate-200 transition-colors duration-300"
                     >
                     Dan Glorioso
                     </a>
