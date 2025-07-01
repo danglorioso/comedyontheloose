@@ -1,4 +1,4 @@
-import ImageCarousel from "./components/Image Carousel";
+import ImageCarousel from "./components/ImageCarousel";
 import WatchBanner from "./components/WatchBanner";
 import WhatIs from "./components/WhatIs";
 
