@@ -5,7 +5,7 @@ import WhatIs from "./components/WhatIs";
 export default function Home() {
   return (
     <div>
-      <ImageCarousel/>
+      {/* <ImageCarousel/> */}
       <WatchBanner/>
       <WhatIs/>
     </div>
