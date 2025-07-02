@@ -5,7 +5,7 @@ import React from "react";
 export default function Footer() {
     return (
         <footer className="bg-slate-900 p-4 shadow-md border-t-4 border-[#3dbc27]">
-            <div className="max-w-screen-xl mx-auto grid grid grid-cols-5 items-start gap-10 p-4">
+            <div className="max-w-screen-xl mx-auto flex grid grid grid-cols-5 items-start gap-10 p-4">
                 {/* Column 1 - Logo */}
                 <div className="col-span-1 flex justify-end items-end">
                     <img src="/favicon.png" 
@@ -14,14 +14,14 @@ export default function Footer() {
                 </div>
                 {/* Column 2 - About Us */}
                 <div className="col-span-2">
-                    <p className="text-3xl">About Us</p>
+                    <h2 className="text-3xl">About Us</h2>
                     <p className="text-md text-gray-400 mt-2">
                         Comedy on the Loose is a sketch comedy TV show that airs exclusively on Littleton Community Television. Created by Dan and Cam in 2016, it showcases their evolution from homemade videos to full-length, studio-produced episodes.
                     </p>
                 </div>
                 {/* Column 3 */}
                 <div className="col-span-2">
-                    <p className="text-3xl">Watch Us On</p>
+                    <h2 className="text-3xl">Watch Us On</h2>
                     <div className="flex flex-row items-end gap-10 mt-2">
                         <a
                             href="https://cloud.castus.tv/vod/littleton/video/64025b373e11cd0008700758?page=HOME&type=live"

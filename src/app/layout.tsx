@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Oswald } from "next/font/google";
+import { Geist, Geist_Mono, Oswald, Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -21,6 +21,12 @@ const oswald = Oswald({
   weight: ["400", "500", "600", "700"],
 });
 
+const poppins = Poppins({
+  variable: "--font-poppins",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
 export const metadata: Metadata = {
   title: "Comedy on the Loose - Sketch Comedy TV Show",
   description: "Sketch comedy TV show",
@@ -35,9 +41,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={geistMono.className}>
+  <html lang="en" className={`${poppins.variable} ${oswald.variable}`}>
       <body
-        className={`${geistSans.variable} bg-black antialiased flex flex-col min-h-screen`}
+        className={`bg-black antialiased flex flex-col min-h-screen`}
       >
         {/* Header */}
         <div className="flex-shrink-0">

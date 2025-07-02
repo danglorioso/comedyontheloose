@@ -7,12 +7,12 @@ import { FaArrowRight } from "react-icons/fa";
 export default function WhatIs() {
   return (
     <section className="bg-white py-8">
-      <div className="max-w-screen-xl px-16 mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-center mt-8">
+      <div className="max-w-screen-xl px-16 mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-[2fr_1.5fr] items-center mt-8">
           {/* Text Column */}
-          <div>
-            <div className="border-t-1 border-[#3dbc27] mb-8"></div>
-            <h2 className="text-4xl font-bold mb-8 text-[#55595e]">
+          <div className="px-6">
+            <div className="border-t-1 border-[#3dbc27]"></div>
+            <h2 className="text-4xl font-bold my-8 text-[#55595e]">
               WHAT IS "COMEDY ON THE LOOSE"?
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
@@ -29,7 +29,7 @@ export default function WhatIs() {
               producers, and video editors, crafting a genuine two-person production. Their enduring 
               passion for humor ignites the stage, propelling their comedic escapades forward.
             </p>
-            <p className="text-lg text-gray-700 leading-relaxed mb-8">
+            <p className="text-lg text-gray-700 leading-relaxed">
               Don't miss a beat – tune in for new full-length episodes released monthly on LCTV 
               and enjoy fresh sketches on our YouTube channel every Friday at 6:00pm.
             </p>
@@ -37,14 +37,14 @@ export default function WhatIs() {
                 href="#about-us" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#3dbc27] text-white px-6 py-3 shadow hover:scale-105 transition-transform duration-200 mb-8">
+                className="inline-flex items-center gap-2 bg-[#3dbc27] text-white px-6 py-3 shadow hover:scale-105 transition-transform duration-200 my-8">
                   READ MORE <FaArrowRight />
               </a>
             <div className="border-t-1 border-[#3dbc27] mb-2"></div>
           </div>
 
           {/* Image Column */}
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex justify-center">
             <Image
               width={600}
               height={300}
