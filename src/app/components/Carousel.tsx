@@ -123,7 +123,7 @@ const Carousel: React.FC<CarouselProps> = ({
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`w-4 h-4 transition border-2 border-white ${
+            className={`w-4 h-4 transition border-2 border-white hover:cursor-pointer ${
               index === currentIndex ? "bg-white" : ""
             }`}
             aria-label={`Go to slide ${index + 1}`}
