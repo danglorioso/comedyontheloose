@@ -90,7 +90,7 @@ const Carousel: React.FC<CarouselProps> = ({
                 {slide.buttonText && slide.buttonLink && (
                   <a
                     href={slide.buttonLink}
-                    className="px-6 py-3 bg-[#3DBC27] text-white font-semibold"
+                    className="px-6 py-3 bg-[#3DBC27] hover:bg-[#32A822] text-white font-semibold transition-all duration-300 transform hover:scale-105"
                   >
                     {slide.buttonText}
                   </a>
