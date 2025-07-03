@@ -32,7 +32,7 @@ const slides = [
 export default function Home() {
   return (
     <div>
-      <Carousel slides={slides} autoPlayInterval={6000} />
+      <Carousel slides={slides} autoPlayInterval={5000} />
       <WatchBanner/>
       <WhatIs/>
     </div>
