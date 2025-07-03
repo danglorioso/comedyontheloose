@@ -107,14 +107,14 @@ const Carousel: React.FC<CarouselProps> = ({
         className="absolute top-1/2 left-4 -translate-y-1/2 bg-black/20 text-white text-3xl w-10 h-10 flex items-center justify-center hover:bg-black/70 transition z-20"
         aria-label="Previous Slide"
       >
-        ‹
+        &lt;
       </button>
       <button
         onClick={nextSlide}
         className="absolute top-1/2 right-4 -translate-y-1/2 bg-black/20 text-white text-3xl w-10 h-10 flex items-center justify-center hover:bg-black/70 transition z-20"
         aria-label="Next Slide"
       >
-        ›
+        &gt;
       </button>
 
       {/* Indicators */}
