@@ -83,7 +83,7 @@ const Carousel: React.FC<CarouselProps> = ({
                   </h2>
                 )}
                 {slide.subtitle && (
-                  <p className="text-xl text-white mb-6 drop-shadow">
+                  <p className="text-2xl text-white mb-6 drop-shadow">
                     {slide.subtitle}
                   </p>
                 )}
