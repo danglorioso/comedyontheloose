@@ -4,18 +4,28 @@ import WhatIs from "./components/WhatIs";
 
 const slides = [
   {
-    imageUrl: "/banner/banner1.png",
-    title: "Comedy on the Loose",
-    subtitle: "Unscripted, uncensored, unbelievably funny.",
-    buttonText: "Watch Now",
-    buttonLink: "/episodes",
+    imageUrl: "/banner/banner1.png"
   },
   {
     imageUrl: "/banner/banner2.png",
-    title: "Season 5 Premiere",
-    subtitle: "Streaming now on Littleton Community TV",
-    buttonText: "See Schedule",
-    buttonLink: "/schedule",
+    title: "NEW SKETCH: LOUD LIBRARY",
+    subtitle: "The library is supposed to be a quiet place, except when it isn't...",
+    buttonText: "Watch Now",
+    buttonLink: "/sketches",
+  },
+  {
+    imageUrl: "/banner/banner3.png",
+    title: "NEW GUESTS: UNBOXING",
+    subtitle: "A random box has shown up at the house and no one knows what's in it. What could it be?!",
+    buttonText: "Watch Now",
+    buttonLink: "/sketches",
+  },
+  {
+    imageUrl: "/banner/banner4.png",
+    title: "NEW EPISODE: SEASEON 2, EPISODE 4",
+    subtitle: "Check out our latest episode on LCTV!",
+    buttonText: "Watch Now",
+    buttonLink: "/episodes",
   },
 ];
 
