@@ -34,8 +34,12 @@ export default function FavoriteSketches() {
     <section className="bg-[#4BD35F] py-12">
       <div className="max-w-screen-xl px-6 md:px-16 mx-auto">
         <div className="text-4xl text-center text-white mb-2">OUR FAVORITE SKETCHES</div>
-        <div className="text-white text-center text-xl mb-8">★</div>
-
+        <div className="flex items-center justify-center my-6">
+            <div className="flex-grow border-t border-white"></div>
+            <div className="mx-4 text-white text-xl">★</div>
+            <div className="flex-grow border-t border-white"></div>
+        </div>
+        
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {videoData.map((season, seasonIdx) => (
             <div key={seasonIdx}>
