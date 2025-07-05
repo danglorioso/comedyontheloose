@@ -28,7 +28,7 @@ export default function WaysToWatch() {
               link: "#",
             },
           ].map((item, idx) => (
-            <div key={idx} className="relative border border-white pt-16 pb-20 px-8 text-white text-center">
+            <div key={idx} className="relative border border-white pt-16 pb-16 my-4 px-8 text-white text-center">
               {/* Icon Overlapping Top Border */}
               <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-[#005395] px-4">
                 {item.icon}
