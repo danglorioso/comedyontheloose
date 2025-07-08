@@ -173,9 +173,12 @@ export default function AboutUs() {
         </footer>
 
         <div className="flex justify-center mt-4">
-            <button className="mt-4 bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 transition">
+            <a
+                href="/contact-us"
+                className="mt-4 bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 transition inline-block text-center"
+            >
                 Contact Us
-            </button>
+            </a>
         </div>
     </section>
   );
