@@ -4,6 +4,8 @@ import WhatIs from "./components/WhatIs";
 import WaysToWatch from "./components/WaysToWatch";
 import FavSketches from "./components/FavSketches";
 import OurStats from "./components/OurStats";
+import SeasonThreePreview from "./components/SeasonThreePreview";
+import NewsletterSignup from "./components/NewsletterSignup";
 
 const slides = [
   {
@@ -41,6 +43,8 @@ export default function Home() {
       <WaysToWatch/>
       <FavSketches/>
       <OurStats/>
+      <SeasonThreePreview/>
+      <NewsletterSignup/>
     </div>
   );
 }
