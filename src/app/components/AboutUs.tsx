@@ -169,7 +169,7 @@ export default function AboutUs() {
             <a href="http://bit.ly/SubToCOTL"><FaYoutube size={24} /></a>
             <a href="http://bit.ly/COTLfacebook"><FaFacebook size={24} /></a>
             <a href="http://bit.ly/COTLtwitter"><FaTwitter size={24} /></a>
-            <a href="http://bit.ly/COTLinstagram"><FaInstagram size={24} /></a>
+            <a href="http://bit.ly/COTLinsta"><FaInstagram size={24} /></a>
         </footer>
 
         <div className="flex justify-center mt-4">
