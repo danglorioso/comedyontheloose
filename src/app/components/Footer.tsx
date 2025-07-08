@@ -29,7 +29,7 @@ export default function Footer() {
         {/* Column 3 - Watch Us */}
         <div className="md:col-span-2 text-center md:text-left">
           <h2 className="text-3xl text-white">Watch Us On</h2>
-          <div className="flex flex-col md:flex-row items-center md:items-end justify-center md:justify-start gap-10 mt-2">
+          <div className="flex flex-col md:flex-row items-center md:items-end justify-center md:justify-start md:gap-10 mt-2">
             <a
               href="https://cloud.castus.tv/vod/littleton/video/64025b373e11cd0008700758?page=HOME&type=live"
               target="_blank"
