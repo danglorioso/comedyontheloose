@@ -24,7 +24,7 @@ export default function AboutUs() {
                 alt="Sketches" 
                 className="rounded" 
             />
-            <p className="text-sm text-center rounded-lg mt-2">
+            <p className="text-sm text-center mt-2">
                 A snapshot of some of our most popular sketches.
             </p>
         </div>
