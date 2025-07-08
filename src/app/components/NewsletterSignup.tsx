@@ -31,7 +31,7 @@ export default function NewsletterSignup() {
           target="_blank"
           noValidate
         >
-          <div className="text-sm text-gray-600 mb-4">
+          <div className="text-sm text-gray-600 text-end">
             <span className="text-red-500">*</span> indicates required
           </div>
 
