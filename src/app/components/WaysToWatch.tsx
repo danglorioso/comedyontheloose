@@ -8,10 +8,11 @@ export default function WaysToWatch() {
   return (
     <section className="bg-[#005395] py-12">
       <div className="max-w-screen-xl px-6 md:px-16 mx-auto">
-        <div className="text-4xl font-medium text-center text-white">WAYS TO WATCH</div>
+        <div className="text-4xl font-medium text-center text-white">
+          WAYS TO WATCH
+        </div>
 
         <div className="mt-12 mb-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Shared styles */}
           {[
             {
               icon: <FaTv className="text-5xl text-white" />,
@@ -28,9 +29,12 @@ export default function WaysToWatch() {
               link: "#",
             },
           ].map((item, idx) => (
-            <div key={idx} className="relative border border-white pt-16 pb-16 my-4 px-8 text-white text-center">
-              {/* Icon Overlapping Top Border */}
-              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-[#005395] px-4">
+            <div
+              key={idx}
+              className="relative border border-white pt-20 pb-20 my-4 px-8 text-white text-center"
+            >
+              {/* Icon overlapping directly on the border */}
+              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#005395] px-4">
                 {item.icon}
               </div>
 
@@ -40,7 +44,7 @@ export default function WaysToWatch() {
               {/* Paragraph */}
               <p className="text-xl leading-relaxed">{item.text}</p>
 
-              {/* Button Overlapping Bottom Border */}
+              {/* Button overlapping bottom border */}
               <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2">
                 <a
                   href={item.link}
