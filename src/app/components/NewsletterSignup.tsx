@@ -24,7 +24,7 @@ export default function NewsletterSignup() {
       </div>
 
       {/* Mailchimp Form */}
-      <div className="bg-white text-black max-w-xl mx-auto p-6 rounded shadow-md">
+      <div className="bg-white text-black max-w-3xl mx-auto p-6 rounded shadow-md">
         <form
           action="https://comedyontheloose.us16.list-manage.com/subscribe/post?u=9faae1d80b90a6db941b833fd&amp;id=193d5c8d12"
           method="post"
