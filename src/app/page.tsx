@@ -3,6 +3,7 @@ import WatchBanner from "./components/WatchBanner";
 import WhatIs from "./components/WhatIs";
 import WaysToWatch from "./components/WaysToWatch";
 import FavSketches from "./components/FavSketches";
+import OurStats from "./components/OurStats";
 
 const slides = [
   {
@@ -39,6 +40,7 @@ export default function Home() {
       <WhatIs/>
       <WaysToWatch/>
       <FavSketches/>
+      <OurStats/>
     </div>
   );
 }
