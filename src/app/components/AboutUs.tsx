@@ -17,15 +17,15 @@ export default function AboutUs() {
     <div className="grid md:grid-cols-2 gap-12">
         {/* Image */}
         <div className="flex flex-col justify-center">
-            <Image 
+            <Image
+                src="/images/4-multi-thumbnail.png"
+                alt="Sketches"
                 width={600}
-                height={400}
-                src="/images/4-multi-thumbnail.png" 
-                alt="Sketches" 
-                className="rounded" 
+                height={356.25}
+                className="rounded h-auto"
             />
             <p className="text-sm text-center mt-2">
-                A snapshot of some of our most popular sketches.
+            A snapshot of some of our most popular sketches.
             </p>
         </div>
 
