@@ -55,6 +55,9 @@ export default function SketchGallery() {
 
   return (
     <section className="px-4 py-12 max-w-screen-xl mx-auto">
+      <h1 className="text-black text-4xl font-bold mb-10 text-center">
+        Gallery
+      </h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {shuffledSketches.map((sketch, index) => (
           <div key={index} className="flex flex-col justify-center">
