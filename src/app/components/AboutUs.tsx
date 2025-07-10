@@ -86,7 +86,7 @@ export default function AboutUs() {
             <Image
                 width={600}
                 height={400}
-                src="/snapshots/EmergencyPreparation3.png"
+                src="/gallery/EmergencyPreparation3.png"
                 alt="Dan and Cam pilot episode"
                 className="rounded max-w-xl mx-auto"
             />
@@ -103,7 +103,7 @@ export default function AboutUs() {
             <Image 
                 width={600}
                 height={400}
-                src="/snapshots/GuideToCamping1.png" 
+                src="/gallery/GuideToCamping1.png" 
                 alt="Sketches" 
                 className="rounded" 
             />
@@ -154,7 +154,7 @@ export default function AboutUs() {
             <Image
                 width={600}
                 height={400}
-                src="/snapshots/BadSketches1.png"
+                src="/gallery/BadSketches1.png"
                 alt="Dan and Cam pilot episode"
                 className="rounded max-w-xl mx-auto"
             />
