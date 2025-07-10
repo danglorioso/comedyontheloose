@@ -7,7 +7,7 @@ import { FaArrowRight } from "react-icons/fa";
 export default function WhatIs() {
   return (
     <section className="bg-white py-8">
-      <div className="max-w-screen-xl px-16 mx-auto">
+      <div className="max-w-screen-xl md:px-16 mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-[2fr_1.5fr] items-center mt-8">
           {/* Text Column */}
           <div className="px-6">
