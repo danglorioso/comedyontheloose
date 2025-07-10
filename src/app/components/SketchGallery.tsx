@@ -31,7 +31,7 @@ const sketches: Sketch[] = [
   { src: "/gallery/OldNews1.png", alt: "Old News", caption: "Old News" },
   { src: "/gallery/OldWeather1.png", alt: "Old Weather", caption: "Old Weather" },
   { src: "/gallery/OneIfByLand1.png", alt: "One If By Land", caption: "One If By Land" },
-  { src: "/gallery/Quizzesofoz1.png", alt: "Quizzes of Oz", caption: "Quizzes of Oz" },
+  { src: "/gallery/QuizzesofOz1.png", alt: "Quizzes of Oz", caption: "Quizzes of Oz" },
   { src: "/gallery/S2E1Outro1.png", alt: "Season 2 Episode 1 Outro", caption: "S2E1 Outro" },
   { src: "/gallery/ScienceFailProject1.png", alt: "Science Fail Project", caption: "Science Fail Project" },
   { src: "/gallery/Season1Episode2Outro1.png", alt: "Season 1 Episode 2 Outro", caption: "Season 1 Episode 2 Outro" },
