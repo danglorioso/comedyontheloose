@@ -21,7 +21,7 @@ export default function Header() {
 
   return (
     <header className="bg-white p-4 shadow-md border-t-4 border-[#3dbc27] mb-2">
-      <div className="max-w-screen-xl px-15 mx-auto flex justify-between items-center gap-5">
+      <div className="max-w-screen-xl md:px-15 mx-auto flex justify-between items-center gap-5">
         {/* Logo */}
         <div className="flex items-center gap-2">
           <Link href="/" className="text-2xl font-bold text-[#3dbc27]">
@@ -49,7 +49,7 @@ export default function Header() {
         {/* Hamburger Icon on Mobile */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden text-[#3dbc27]"
+          className="md:hidden text-[#3dbc27] pr-5"
           aria-label="Toggle menu"
         >
           {menuOpen ? <FaTimes size={28} /> : <FaBars size={28} />}
