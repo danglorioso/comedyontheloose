@@ -1,4 +1,4 @@
-import SketchGallery from "../components/SketchGallery";
+import SketchGallery from "../components/GalleryGrid";
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
