@@ -1,4 +1,4 @@
-import SketchGallery from "../components/GalleryGrid";
+import GalleryGrid from "../components/GalleryGrid";
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function GalleryPage() {
   return (
     <div>
-      <SketchGallery />
+      <GalleryGrid />
     </div>
   );
 }

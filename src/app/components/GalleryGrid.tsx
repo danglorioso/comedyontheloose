@@ -46,7 +46,7 @@ function shuffleArray<T>(array: T[]): T[] {
   return [...array].sort(() => Math.random() - 0.5);
 }
 
-export default function SketchGallery() {
+export default function GalleryGrid() {
   const [shuffledSketches, setShuffledSketches] = useState<Sketch[]>([]);
 
   useEffect(() => {
