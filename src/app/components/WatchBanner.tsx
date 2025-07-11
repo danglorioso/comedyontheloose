@@ -5,7 +5,7 @@ import { FaPlayCircle, FaCalendarAlt } from "react-icons/fa";
 
 export default function WatchUs() {
   return (
-    <section className="bg-[#3DBC27] py-5">
+    <section className="bg-[#3DBC27] py-5 px-10">
       <div className="max-w-screen-xl mx-auto flex flex-col items-center justify-center md:flex-row text-white text-center md:text-left gap-8">
         {/* Watch Online */}
         <div className="flex flex-col md:flex-row items-center text-right gap-8">
@@ -21,7 +21,10 @@ export default function WatchUs() {
           </a>
         </div>
 
-        {/* Divider */}
+        {/* Horizontal Divider on Mobile */}
+        <div className="md:hidden w-3/4 h-px bg-white opacity-50" />
+
+        {/* Vertical Divider on Desktop */}
         <div className="hidden md:block h-16 w-px bg-white opacity-50" />
 
         {/* Watch on TV */}
