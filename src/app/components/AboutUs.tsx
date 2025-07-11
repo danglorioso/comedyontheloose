@@ -6,7 +6,7 @@ import { FaYoutube, FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 
 export default function AboutUs() {
   return (
-    <section className="max-w-screen-xl px-16 mx-auto py-12 text-gray-800">
+    <section className="max-w-screen-xl px-4 sm:px-8 md:px-12 lg:px-16 mx-auto py-12 text-gray-800">
       {/* Announcement */}
       <div className="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 rounded mb-8">
         <p className="font-bold text-lg">Season 3 is on the way!</p>

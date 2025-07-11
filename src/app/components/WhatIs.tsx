@@ -54,7 +54,7 @@ export default function WhatIs() {
             />
           </div>
         </div>
-        <div className="w-full mt-8 py-8">
+        <div className="w-full mt-8 pb-8">
           <div className="aspect-video mt-8">
             <iframe
               className="w-full h-full border-5 border-solid border-[#3dbc27]"
