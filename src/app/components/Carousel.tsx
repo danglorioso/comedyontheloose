@@ -78,12 +78,12 @@ const Carousel: React.FC<CarouselProps> = ({
             {(slide.title || slide.subtitle || slide.buttonText) && (
               <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center">
                 {slide.title && (
-                  <h2 className="text-2xl md:text-5xl text-white mb-4 drop-shadow bg-[#3DBC27] p-3">
+                  <h2 className="text-lg md:text-5xl text-white mb-4 drop-shadow bg-[#3DBC27] p-3">
                     {slide.title}
                   </h2>
                 )}
                 {slide.subtitle && (
-                  <p className="text-2xl text-white mb-6 drop-shadow max-w-4xl w-full">
+                  <p className="text-md text-white md:mb-6 mb-2 drop-shadow max-w-sm md:max-w-4xl w-full">
                     {slide.subtitle}
                   </p>
                 )}
