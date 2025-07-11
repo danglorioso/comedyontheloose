@@ -8,7 +8,7 @@ export default function WatchUs() {
     <section className="bg-[#3DBC27] py-5 px-10">
       <div className="max-w-screen-xl mx-auto flex flex-col items-center justify-center md:flex-row text-white text-center md:text-left gap-8">
         {/* Watch Online */}
-        <div className="flex flex-col md:flex-row items-center text-right gap-8">
+        <div className="flex flex-col md:flex-row items-center text-right gap-4 md:gap-8">
           <h2 className="text-4xl font-bold leading-none">
             WATCH US<br />ONLINE:
           </h2>
@@ -28,7 +28,7 @@ export default function WatchUs() {
         <div className="hidden md:block h-16 w-px bg-white opacity-50" />
 
         {/* Watch on TV */}
-        <div className="flex flex-col md:flex-row items-center text-right gap-8">
+        <div className="flex flex-col md:flex-row items-center text-right gap-4 md:gap-8">
           <h2 className="text-4xl font-bold leading-none">
             WATCH US<br />ON TV:
           </h2>
