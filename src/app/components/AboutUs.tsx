@@ -22,7 +22,7 @@ export default function AboutUs() {
                 alt="Sketches"
                 width={600}
                 height={356.25}
-                className="rounded h-auto"
+                className="rounded w-full h-auto mx-auto"
             />
             <p className="text-sm text-center mt-2">
             A snapshot of some of our most popular sketches.
@@ -55,7 +55,7 @@ export default function AboutUs() {
     </div>
 
     {/* BTS Section */}
-    <div className="grid md:grid-cols-2 gap-12">
+    <div className="grid md:grid-cols-2 gap-12 mx-auto">
         <div>
             <div className="border-t-1 border-[#3dbc27]"></div>
             <h2 className="text-4xl font-bold my-8 text-green-600">
@@ -88,7 +88,7 @@ export default function AboutUs() {
                 height={400}
                 src="/gallery/EmergencyPreparation3.png"
                 alt="Dan and Cam pilot episode"
-                className="rounded max-w-xl mx-auto"
+                className="rounded w-full h-auto mx-auto"
             />
             <p className="text-sm text-center mt-2">
                 Dan and Cam pictured in the first sketch of their pilot episode.
@@ -105,7 +105,7 @@ export default function AboutUs() {
                 height={400}
                 src="/gallery/GuideToCamping1.png" 
                 alt="Sketches" 
-                className="rounded" 
+                className="rounded w-full h-auto mx-auto" 
             />
             <p className="text-sm text-center rounded-lg mt-2">
                 Dan and Cam go outside. 
@@ -156,7 +156,7 @@ export default function AboutUs() {
                 height={400}
                 src="/gallery/BadSketches1.png"
                 alt="Dan and Cam pilot episode"
-                className="rounded max-w-xl mx-auto"
+                className="rounded w-full h-auto mx-auto"
             />
             <p className="text-sm text-center mt-2">
                 Reviewing some of our sketch ideas. 
@@ -183,4 +183,3 @@ export default function AboutUs() {
     </section>
   );
 };
-
