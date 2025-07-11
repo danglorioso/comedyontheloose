@@ -10,7 +10,7 @@ type Stat = {
 };
 
 const stats: Stat[] = [
-  { icon: <FaEye className="text-[#3dbc27] text-2xl" />, label: "VIEWS", value: 6046 },
+  { icon: <FaEye className="text-[#3dbc27] text-2xl" />, label: "VIEWS", value: 6257 },
   { icon: <FaHeart className="text-[#3dbc27] text-2xl" />, label: "LIKES", value: 315 },
   { icon: <FaClock className="text-[#3dbc27] text-2xl" />, label: "MINUTES OF CONTENT", value: 735 },
   { icon: <FaHourglassHalf className="text-[#3dbc27] text-2xl" />, label: "HOURS OF FILMING", value: 300 },
