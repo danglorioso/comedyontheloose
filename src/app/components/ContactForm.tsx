@@ -36,7 +36,7 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div className="max-w-3xl mx-auto px-4 py-10 text-black">
+    <div className="max-w-3xl mx-auto px-4 py-6 md:py-12 text-black">
       <h2 className="text-3xl font-bold mb-6">Contact Us</h2>
 
       {isSubmitted ? (
