@@ -11,7 +11,7 @@ interface Episode {
   date: string;
   aired: boolean;
   thumbnail: string;
-  sketches: { name: string; link: string }[];
+  sketches: { name: string; link?: string }[];
   url: string;
 }
 
@@ -24,9 +24,9 @@ const episodes: Episode[] = [
         thumbnail: "/episodes/s1e1.png",
         sketches: [
             { name: "Emergency Preparation", link: "/sketches/emergency-preparation" },
-            { name: "Your Conscience 1", link: "" },
-            { name: "Hall of the Mountain", link: "" },
-            { name: "Words of Encouragement", link: "" },
+            { name: "Your Conscience 1" },
+            { name: "Hall of the Mountain" },
+            { name: "Words of Encouragement" },
         ],
         url: "https://comedyontheloose.com/s1e1",
     },
@@ -66,9 +66,9 @@ const episodes: Episode[] = [
         aired: true,
         thumbnail: "/episodes/s1e4.png",
         sketches: [
-            { name: "Christmas in Australia", link: "/sketches/christmas-in-australia" },
-            { name: "Gift Exchange", link: "/sketches/gift-exchange" },
-            { name: "‘Twas the Night", link: "/sketches/twas-the-night" },
+            { name: "Christmas in Australia" },
+            { name: "Gift Exchange" },
+            { name: "‘Twas the Night" },
         ],
         url: "https://comedyontheloose.com/s1e4",
     },
@@ -80,10 +80,10 @@ const episodes: Episode[] = [
         thumbnail: "/episodes/s2e1.png",
         sketches: [
             { name: "20 Questions", link: "/sketches/20-questions" },
-            { name: "Science 'Fail' Project", link: "/sketches/science-fail-project" },
-            { name: "Quizzes of Oz", link: "/sketches/quizzes-of-oz" },
-            { name: "Autocorrect 1", link: "/sketches/autocorrect-1" },
-            { name: "One If By Land", link: "/sketches/one-if-by-land" },
+            { name: "The Birthday Card", link: "/sketches/the-birthday-card" },
+            { name: "How to Write a Perfect Essay", link: "/sketches/how-to-write-a-perfect-essay" },
+            { name: "Autocorrect 2", link: "/sketches/autocorrect-2" },
+            { name: "Spelling Bee", link: "/sketches/spelling-bee" },
         ],
         url: "https://example.com/watch/s2e1",
     },
@@ -95,7 +95,7 @@ const episodes: Episode[] = [
         thumbnail: "/episodes/s2e2.png",
         sketches: [
             { name: "Incorrect!", link: "/sketches/incorrect" },
-            { name: "Stuck Outside", link: "/sketches/stuck-outside" },
+            { name: "Stuck Outside" },
             { name: "No Questions Asked", link: "/sketches/no-questions-asked" },
             { name: "Old Weather", link: "/sketches/old-weather" },
         ],
@@ -124,7 +124,7 @@ const episodes: Episode[] = [
         sketches: [
             { name: "Halloween Hoarding", link: "/sketches/halloween-hoarding" },
             { name: "Guide to Camping", link: "/sketches/guide-to-camping" },
-            { name: "Communication Errors", link: "/sketches/communication-errors" },
+            { name: "Communication Errors" },
             { name: "It’s Not Broken", link: "/sketches/its-not-broken" },
         ],
         url: "https://example.com/watch/s2e4",
@@ -139,7 +139,7 @@ const episodes: Episode[] = [
             { name: "Loud Library", link: "/sketches/loud-library" },
             { name: "Unboxing", link: "/sketches/unboxing" },
             { name: "Guide to Procrastination", link: "/sketches/guide-to-procrastination" },
-            { name: "Yobrella", link: "/sketches/yobrella" },
+            { name: "Yobrella" },
         ],
         url: "https://comedyontheloose.com/s3e1",
     },
@@ -241,12 +241,16 @@ export default function OnlineEpisodes() {
                                 ? ", and "
                                 : ", ";
                                 return (
-                                <span key={sketch.name}>
-                                    <Link href={sketch.link} className="text-[#34a924] hover:underline">
-                                    {sketch.name}
-                                    </Link>
+                                  <span key={sketch.name}>
+                                    {sketch.link ? (
+                                      <Link href={sketch.link} className="text-[#34a924] hover:underline">
+                                        {sketch.name}
+                                      </Link>
+                                    ) : (
+                                      <span>{sketch.name}</span>
+                                    )}
                                     {separator}
-                                </span>
+                                  </span>
                                 );
                             })}
                         </p>
