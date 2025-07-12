@@ -1,4 +1,4 @@
-// src/app/sketches/[...slug]/page.tsx
+// app/sketches/[slug]/page.tsx
 import { redirect } from "next/navigation";
 
 const sketchRedirects: Record<string, string> = {
@@ -31,19 +31,21 @@ const sketchRedirects: Record<string, string> = {
   "guide-to-procrastination": "https://www.youtube.com/watch?v=XuS9bea1mRY",
 };
 
-export default function SketchRedirectPage({ params }: { params: { slug: string[] } }) {
-  const slugPath = params.slug.join("/");
-  const destination = sketchRedirects[slugPath];
+interface SketchRedirectPageProps {
+  params: { slug: string };
+}
 
-  if (destination) {
-    redirect(destination);
+export default function SketchRedirectPage({ params }: SketchRedirectPageProps) {
+  const destination = sketchRedirects[params.slug];
+
+  if (!destination) {
+    // You can customize this or use notFound()
+    return (
+      <div className="min-h-screen flex items-center justify-center text-center p-4">
+        <h1 className="text-2xl font-bold">Sketch not found</h1>
+      </div>
+    );
   }
 
-  // Optional fallback if not found:
-  return (
-    <div className="p-8 text-center">
-      <h1 className="text-2xl font-bold text-red-600">Sketch Not Found</h1>
-      <p className="mt-4">The sketch you're looking for doesn’t exist.</p>
-    </div>
-  );
+  redirect(destination);
 }
