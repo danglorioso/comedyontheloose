@@ -44,7 +44,7 @@ export default function WhatIs() {
           </div>
 
           {/* Image Column */}
-          <div className="flex justify-center">
+          <div className="flex justify-center mt-6 md:mt-0">
             <Image
               width={600}
               height={300}
