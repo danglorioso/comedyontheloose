@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { FaEye, FaHeart, FaClock, FaHourglassHalf } from "react-icons/fa";
 
 type Stat = {
@@ -18,14 +18,38 @@ const stats: Stat[] = [
 
 export default function OurStats() {
   const [counts, setCounts] = useState<number[]>(stats.map(() => 0));
+  const [hasAnimated, setHasAnimated] = useState(false);
+  const sectionRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !hasAnimated) {
+          animateCount();
+          setHasAnimated(true);
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, [hasAnimated]);
+
+  const animateCount = () => {
     let start = performance.now();
-    const duration = 1500; // in ms
+    const duration = 1500;
 
     const animate = (timestamp: number) => {
       const progress = Math.min((timestamp - start) / duration, 1);
-      const newCounts = stats.map((stat, i) =>
+      const newCounts = stats.map((stat) =>
         Math.floor(progress * stat.value)
       );
       setCounts(newCounts);
@@ -36,10 +60,11 @@ export default function OurStats() {
     };
 
     requestAnimationFrame(animate);
-  }, []);
+  };
 
   return (
     <section
+      ref={sectionRef}
       className="relative bg-fixed bg-center bg-cover py-15"
       style={{
         backgroundImage: `url('/banner/COTL-Clouds-and-Kit-Drawing-digital-v1-50opacity.png')`,
@@ -53,7 +78,7 @@ export default function OurStats() {
             {stats.map((stat, idx) => (
               <div
                 key={idx}
-                className="relative border-2 border-[#3dbc27] px-6 py-8 "
+                className="relative border-2 border-[#3dbc27] px-6 py-8"
               >
                 <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 px-4">
                   {stat.icon}
