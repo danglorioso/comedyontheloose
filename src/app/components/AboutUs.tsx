@@ -165,7 +165,7 @@ export default function AboutUs() {
     </div>
 
       {/* Footer Icons */}
-        <footer className="flex justify-center space-x-6 mt-12 text-gray-600">
+        <footer className="flex justify-center space-x-6 mt-10 text-gray-600">
             <a href="http://bit.ly/SubToCOTL"><FaYoutube size={24} /></a>
             <a href="http://bit.ly/COTLfacebook"><FaFacebook size={24} /></a>
             <a href="http://bit.ly/COTLtwitter"><FaTwitter size={24} /></a>
