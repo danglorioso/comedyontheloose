@@ -24,9 +24,9 @@ const episodes: Episode[] = [
         thumbnail: "/episodes/s1e1.png",
         sketches: [
             { name: "Emergency Preparation", link: "/sketches/emergency-preparation" },
-            { name: "Your Conscience 1", link: "/sketches/your-conscience-1" },
-            { name: "Hall of the Mountain", link: "/sketches/hall-of-the-mountain" },
-            { name: "Words of Encouragement", link: "/sketches/words-of-encouragement" },
+            { name: "Your Conscience 1", link: "" },
+            { name: "Hall of the Mountain", link: "" },
+            { name: "Words of Encouragement", link: "" },
         ],
         url: "https://comedyontheloose.com/s1e1",
     },
