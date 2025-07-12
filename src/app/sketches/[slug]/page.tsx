@@ -32,10 +32,11 @@ const sketchRedirects: Record<string, string> = {
 };
 
 interface SketchRedirectPageProps {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
-export default function SketchRedirectPage({ params }: SketchRedirectPageProps) {
+export default async function SketchRedirectPage(props: SketchRedirectPageProps) {
+  const params = await props.params;
   const destination = sketchRedirects[params.slug];
 
   if (!destination) {
