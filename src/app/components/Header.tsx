@@ -24,7 +24,7 @@ export default function Header() {
       <div className="max-w-screen-xl md:px-15 mx-auto flex justify-between items-center gap-5">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <Link href="/" className="text-2xl font-bold text-[#3dbc27]">
+          <Link href="/" className="text-2xl font-bold text-[#3dbc27] hover:tranform hover:scale-103 transition-transform duration-400">
             <img src="/logo.png" alt="Comedy on the Loose" className="h-22 w-auto object-contain" />
           </Link>
         </div>
