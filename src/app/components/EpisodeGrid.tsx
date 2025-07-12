@@ -38,7 +38,7 @@ const episodes: Episode[] = [
         thumbnail: "/episodes/s1e2.png",
         sketches: [
             { name: "20 Questions", link: "/sketches/20-questions" },
-            { name: "Science 'Fail' Project", link: "/sketches/science-fail-project" },
+            { name: "Science 'Fail' Project", link: "" },
             { name: "Quizzes of Oz", link: "/sketches/quizzes-of-oz" },
             { name: "Autocorrect 1", link: "/sketches/autocorrect-1" },
             { name: "One If By Land", link: "/sketches/one-if-by-land" },
