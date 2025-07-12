@@ -50,7 +50,7 @@ const Carousel: React.FC<CarouselProps> = ({
   return (
     <div
       className="relative w-full overflow-hidden mb-2"
-      onMouseEnter={() => timeoutRef.current && clearTimeout(timeoutRef.current)}
+      // onMouseEnter={() => timeoutRef.current && clearTimeout(timeoutRef.current)}
       onMouseLeave={resetAutoPlay}
     >
       {/* Height controller */}
