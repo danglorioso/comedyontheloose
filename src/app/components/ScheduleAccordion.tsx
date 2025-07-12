@@ -91,8 +91,8 @@ const ScheduleAccordion: React.FC = () => {
   const dailySchedule = scheduleData[activeDay];
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-10">
-        <h1 className="text-black text-4xl font-bold mb-10 pb-5">Watch Episodes Live</h1>
+    <div className="max-w-4xl mx-auto px-4 py-6 md:py-12">
+        <h1 className="text-black text-4xl font-bold mb-4 pb-5">Watch Episodes Live</h1>
 
       {/* Days Tabs */}
       <div className="flex justify-between border-b border-[#3dbc27] mb-4 overflow-x-auto">

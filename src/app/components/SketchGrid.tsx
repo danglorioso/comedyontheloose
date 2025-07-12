@@ -234,7 +234,7 @@ const sketches: Sketch[] = [
 
 export default function SketchGalleryPage() {
     return (
-        <section className="px-4 py-12 max-w-screen-xl mx-auto">
+        <section className="px-4 py-6 md:py-12 max-w-screen-xl mx-auto">
             <h1 className="text-black text-4xl font-bold mb-10 text-center">
                 Browse Sketches
             </h1>

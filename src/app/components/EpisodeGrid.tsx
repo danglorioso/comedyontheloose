@@ -157,7 +157,7 @@ export default function OnlineEpisodes() {
   ).sort((a, b) => Number(b.split(" ")[1]) - Number(a.split(" ")[1]));
 
   return (
-    <section className="px-4 py-12 max-w-screen-xl mx-auto">
+    <section className="px-4 py-6 md:py-12 max-w-screen-xl mx-auto">
       <h1 className="text-black text-4xl font-bold mb-6">Watch Episodes Online</h1>
 
       {/* Filter by Season */}
