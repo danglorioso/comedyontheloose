@@ -14,23 +14,23 @@ export default function AboutUs() {
       </div>
 
     {/* What is COTL Section */}
-    <div className="grid md:grid-cols-2 gap-12">
+    <div className="flex flex-col md:grid md:grid-cols-2 gap-12">
         {/* Image */}
-        <div className="flex flex-col justify-center">
+        <div className="order-2 md:order-none flex flex-col justify-center h-full">
             <Image
                 src="/images/4-multi-thumbnail.png"
                 alt="Sketches"
                 width={600}
-                height={356.25}
+                height={400}
                 className="rounded w-full h-auto mx-auto"
             />
-            <p className="text-sm text-center mt-2">
+            <p className="text-sm text-center md:mb-0 mb-10">
             A snapshot of some of our most popular sketches.
             </p>
         </div>
 
         {/* Text */}
-        <div>
+        <div className="flex flex-col justify-center order-1 md:order-none">
             <div className="border-t-1 border-[#3dbc27]"></div>
             <h2 className="text-4xl font-bold my-8 text-green-600">
                 What is "Comedy on the Loose"?
@@ -43,7 +43,7 @@ export default function AboutUs() {
             writing, it quickly became popular, drawing hundreds of views per
             episode each month and topping LCTV’s popularity charts.
             </p>
-            <p className="mb-4">
+            <p className="mb-0 md:mb-4">
             Since its start in 2016, the show has released eight episodes over
             three seasons, each one well-received for its humor. Dan and Cam
             also post new sketches weekly on YouTube, attracting thousands of
@@ -55,8 +55,8 @@ export default function AboutUs() {
     </div>
 
     {/* BTS Section */}
-    <div className="grid md:grid-cols-2 gap-12 mx-auto">
-        <div>
+    <div className="flex flex-col md:grid md:grid-cols-2 gap-12">
+        <div className="flex flex-col justify-center order-1 md:order-none">
             <div className="border-t-1 border-[#3dbc27]"></div>
             <h2 className="text-4xl font-bold my-8 text-green-600">
                 Behind the Sketches
@@ -71,7 +71,7 @@ export default function AboutUs() {
             episodes, creating an ongoing universe of inside jokes for our 
             viewers.
             </p>
-            <p className="mb-4">
+            <p className="mb-0 md:mb-4">
             Once a script is finalized, we memorize lines and dedicate an 
             entire day to filming each sketch. Every shoot is hands-on — we 
             handle everything ourselves: set decoration, technical setup, 
@@ -82,7 +82,7 @@ export default function AboutUs() {
             editing, multi-audio mixing, sound design, and sometimes voice-overs.
             </p>
         </div>
-        <div className="flex flex-col justify-center mt-12">
+        <div className="order-2 md:order-none flex flex-col justify-center h-full">
             <Image
                 width={600}
                 height={400}
@@ -97,9 +97,9 @@ export default function AboutUs() {
     </div>
 
     {/* Production, Promotion, and Passion Section */}
-    <div className="grid md:grid-cols-2 gap-12">
+    <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-12">
         {/* Image */}
-        <div className="flex flex-col justify-center">
+        <div className="order-1 md:order-none flex flex-col justify-center h-full">
             <Image 
                 width={600}
                 height={400}
@@ -107,13 +107,13 @@ export default function AboutUs() {
                 alt="Sketches" 
                 className="rounded w-full h-auto mx-auto" 
             />
-            <p className="text-sm text-center rounded-lg mt-2">
+            <p className="text-sm text-center rounded-lg mt-2 md:mb-0 mb-10">
                 Dan and Cam go outside. 
             </p>
         </div>
 
         {/* Text */}
-        <div>
+        <div className="flex flex-col justify-center order-2 md:order-none mt-12 md:mt-0">
             <div className="border-t-1 border-[#3dbc27]"></div>
             <h2 className="text-4xl font-bold my-8 text-green-600">
                 Production, Promotion, and Passion
@@ -126,7 +126,7 @@ export default function AboutUs() {
             Our sketches follow a classic “bit” format: short, character-driven 
             scenes built around multiple jokes — simple setups with big payoffs.
             </p>
-            <p className="mb-4">
+            <p className="md:mb-0 mb-4">
             Though we occasionally feature special guests, every sketch stars 
             the original duo — Dan and Cam. We're proud of our long-standing 
             partnership with LCTV, and we’re incredibly grateful for their 
@@ -137,7 +137,7 @@ export default function AboutUs() {
     </div>
 
     {/* Why We Do It Section */}
-    <div className="grid md:grid-cols-2 gap-12">
+    <div className="grid md:grid-cols-2 gap-0 md:gap-12">
         <div>
             <div className="border-t-1 border-[#3dbc27]"></div>
             <h2 className="text-4xl font-bold my-8 text-green-600">
@@ -150,7 +150,7 @@ export default function AboutUs() {
             Thank you for watching — we can’t wait to share what’s next.
             </p>
         </div>
-        <div className="flex flex-col justify-center mt-12">
+        <div className="flex flex-col justify-center mt-0 md:mt-12">
             <Image
                 width={600}
                 height={400}
