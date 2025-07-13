@@ -63,10 +63,10 @@ export default function Footer() {
       <div className="text-center mt-6">
           {/* Footer Icons */}
         <div className="flex justify-center space-x-4 mb-6">
-          <a href="http://bit.ly/SubToCOTL"><FaYoutube size={24} /></a>
-          <a href="http://bit.ly/COTLinsta"><FaInstagram size={24} /></a>
-          <a href="http://bit.ly/COTLfacebook"><FaFacebook size={24} /></a>
-          <a href="http://bit.ly/COTLtwitter"><FaTwitter size={24} /></a>
+          <a href="/SubToCOTL"><FaYoutube size={24} /></a>
+          <a href="/insta"><FaInstagram size={24} /></a>
+          <a href="/facebook"><FaFacebook size={24} /></a>
+          <a href="/twitter"><FaTwitter size={24} /></a>
         </div>
 
         <p className="mb-2 text-md text-slate-300 leading-tight">
