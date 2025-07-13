@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { FaYoutube, FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -60,6 +61,14 @@ export default function Footer() {
 
       {/* Footer Bottom Text */}
       <div className="text-center mt-6">
+          {/* Footer Icons */}
+        <div className="flex justify-center space-x-4 mb-6">
+          <a href="http://bit.ly/SubToCOTL"><FaYoutube size={24} /></a>
+          <a href="http://bit.ly/COTLinsta"><FaInstagram size={24} /></a>
+          <a href="http://bit.ly/COTLfacebook"><FaFacebook size={24} /></a>
+          <a href="http://bit.ly/COTLtwitter"><FaTwitter size={24} /></a>
+        </div>
+
         <p className="mb-2 text-md text-slate-300 leading-tight">
           Website created by{" "}
           <a
