@@ -20,14 +20,15 @@ const linkRedirects: Record<string, string> = {
 };
 
 interface SketchRedirectPageProps {
-  params: Promise<{ slug: string }>;
+  params: { slug: string };
 }
 
-export default async function SketchRedirectPage(props: SketchRedirectPageProps) {
-  const params = await props.params;
+export default function SketchRedirectPage({ params }: SketchRedirectPageProps) {
   const destination = linkRedirects[params.slug];
 
   if (!destination) {
     redirect('/');
   }
+
+  redirect(destination);
 }
