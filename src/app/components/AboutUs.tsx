@@ -166,10 +166,10 @@ export default function AboutUs() {
 
       {/* Footer Icons */}
         <footer className="flex justify-center space-x-6 mt-10 text-gray-600">
-            <a href="http://bit.ly/SubToCOTL"><FaYoutube size={24} /></a>
-            <a href="http://bit.ly/COTLinsta"><FaInstagram size={24} /></a>
-            <a href="http://bit.ly/COTLfacebook"><FaFacebook size={24} /></a>
-            <a href="http://bit.ly/COTLtwitter"><FaTwitter size={24} /></a>
+            <a href="/SubToCOTL"><FaYoutube size={24} /></a>
+            <a href="/insta"><FaInstagram size={24} /></a>
+            <a href="/facebook"><FaFacebook size={24} /></a>
+            <a href="/twitter"><FaTwitter size={24} /></a>
         </footer>
 
         <div className="flex justify-center mt-4">
