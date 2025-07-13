@@ -40,7 +40,6 @@ export default async function SketchRedirectPage(props: SketchRedirectPageProps)
   const destination = sketchRedirects[params.slug];
 
   if (!destination) {
-    // You can customize this or use notFound()
     return (
       <div className="min-h-screen flex items-center justify-center text-center p-4">
         <h1 className="text-2xl font-bold">Sketch not found</h1>
