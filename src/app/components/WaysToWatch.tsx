@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import { FaTv } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa6";

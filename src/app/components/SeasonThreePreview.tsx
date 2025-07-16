@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import { FaFilm, FaUsers } from "react-icons/fa";
 import { FaHashtag } from "react-icons/fa6";
