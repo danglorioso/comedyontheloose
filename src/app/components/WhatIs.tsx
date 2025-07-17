@@ -32,7 +32,7 @@ export default function WhatIs() {
               and enjoy fresh sketches on our YouTube channel every Friday at 6:00pm.
             </p>
               <a 
-                href="#about-us" 
+                href="/about-us" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-[#3dbc27] text-white px-6 py-3 shadow hover:scale-105 transition-transform duration-200 my-8">
