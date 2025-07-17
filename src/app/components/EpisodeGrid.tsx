@@ -243,7 +243,10 @@ export default function OnlineEpisodes() {
                                 return (
                                   <span key={sketch.name}>
                                     {sketch.link ? (
-                                      <Link href={sketch.link} className="text-[#34a924] hover:underline">
+                                      <Link 
+                                        href={sketch.link} 
+                                        target="_blank"
+                                        className="text-[#34a924] hover:underline">
                                         {sketch.name}
                                       </Link>
                                     ) : (
