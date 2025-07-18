@@ -16,14 +16,14 @@ const slides = [
     title: "NEW SKETCH: LOUD LIBRARY",
     subtitle: "The library is supposed to be a quiet place, except when it isn't...",
     buttonText: "Watch Now",
-    buttonLink: "https://www.youtube.com/watch?v=7Svyl50r1lk",
+    buttonLink: "/sketches/loud-library",
   },
   {
     imageUrl: "/banner/banner3.png",
     title: "NEW GUESTS: UNBOXING",
     subtitle: "A random box has shown up at the house and no one knows what's in it. What could it be?!",
     buttonText: "Watch Now",
-    buttonLink: "https://www.youtube.com/watch?v=XlCrqFDuQ0k",
+    buttonLink: "/sketches/unboxing",
   },
   {
     imageUrl: "/banner/banner4.png",
