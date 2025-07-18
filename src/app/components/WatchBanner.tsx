@@ -11,7 +11,7 @@ export default function WatchUs() {
             WATCH US<br />ONLINE:
           </h2>
           <a
-            href="#episodes"
+            href="/episodes"
             className="flex items-center justify-center gap-2 bg-[#73b666] border border-white px-10 py-4 rounded-md font-bold text-white hover:bg-white hover:text-[#73b666] hover:border-[#73b666] transition-all duration-300 transform hover:scale-105"
           >
             <FaPlayCircle className="w-6 h-6"/>
@@ -31,7 +31,7 @@ export default function WatchUs() {
             WATCH US<br />ON TV:
           </h2>
           <a
-            href="#schedule"
+            href="/schedule"
             className="flex items-center justify-center gap-2 bg-[#D04D44] px-10 py-4 rounded-md font-bold text-white border border-white hover:bg-white hover:text-[#D04D44] hover:border-[#D04D44] transition-all duration-300 transform hover:scale-105"
           >
             <FaCalendarAlt className="w-6 h-6" />
