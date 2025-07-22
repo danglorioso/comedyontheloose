@@ -164,10 +164,10 @@ export default function AboutUs() {
 
       {/* Footer Icons */}
         <footer className="flex justify-center space-x-6 mt-10 text-gray-600">
-            <a href="/SubToCOTL"><FaYoutube size={24} /></a>
-            <a href="/insta"><FaInstagram size={24} /></a>
-            <a href="/facebook"><FaFacebook size={24} /></a>
-            <a href="/twitter"><FaTwitter size={24} /></a>
+            <a href="/SubToCOTL" aria-label="Subscribe to Comedy on the Loose YouTube channel"><FaYoutube size={24} /></a>
+            <a href="/insta" aria-label="Follow Comedy on the Loose on Instagram"><FaInstagram size={24} /></a>
+            <a href="/facebook" aria-label="Follow Comedy on the Loose on Facebook"><FaFacebook size={24} /></a>
+            <a href="/twitter" aria-label="Follow Comedy on the Loose on Twitter"><FaTwitter size={24} /></a>
         </footer>
 
         <div className="flex justify-center mt-4">
