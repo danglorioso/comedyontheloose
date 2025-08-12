@@ -21,11 +21,11 @@ export default function Header() {
 
   return (
     <div className="sticky top-0 z-50">
-    <header className="bg-white p-4 shadow-md border-t-4 border-[#3dbc27] mb-2">
+    <header className="bg-secondary p-4 shadow-md border-t-4 border-primary mb-2">
       <div className="max-w-screen-xl md:px-15 mx-auto flex justify-between items-center gap-5">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <Link href="/" className="text-2xl font-bold text-[#3dbc27] hover:tranform hover:scale-103 transition-transform duration-400">
+          <Link href="/" className="text-2xl font-bold text-primary hover:tranform hover:scale-103 transition-transform duration-400">
             <img src="/logo.png" alt="Comedy on the Loose" className="h-22 w-auto object-contain" />
           </Link>
         </div>
@@ -39,7 +39,7 @@ export default function Header() {
                 key={label}
                 href={href}
                 className={`px-3 py-2 px-4 transition-colors duration-200 text-base flex items-center justify-center text-center
-                  ${isActive ? "bg-[#3dbc27] text-white font-normal" : "hover:bg-[#3dbc27] hover:text-white"}`}
+                  ${isActive ? "bg-primary text-white font-normal" : "hover:bg-primary hover:text-white"}`}
               >
                 {label}
               </a>
@@ -50,7 +50,7 @@ export default function Header() {
         {/* Hamburger Icon on Mobile */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden text-[#3dbc27] pr-5"
+          className="md:hidden text-primary pr-5"
           aria-label="Toggle menu"
         >
           {menuOpen ? <FaTimes size={28} /> : <FaBars size={28} />}
@@ -69,8 +69,8 @@ export default function Header() {
                 onClick={() => setMenuOpen(false)} // Close menu on click
                 className={`block px-4 py-2 rounded transition-colors text-base ${
                   isActive
-                    ? "bg-[#3dbc27] text-white font-normal"
-                    : "hover:bg-[#3dbc27] text-black hover:text-white"
+                    ? "bg-primary text-white font-normal"
+                    : "hover:bg-primary text-black hover:text-white"
                 }`}
               >
                 {label}

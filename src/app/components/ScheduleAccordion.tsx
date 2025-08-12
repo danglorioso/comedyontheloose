@@ -95,14 +95,14 @@ const ScheduleAccordion: React.FC = () => {
         <h1 className="text-black text-4xl font-bold mb-4 pb-5">Watch Episodes Live</h1>
 
       {/* Days Tabs */}
-      <div className="flex justify-between border-b border-[#3dbc27] mb-4 overflow-x-auto">
+      <div className="flex justify-between border-b border-primary mb-4 overflow-x-auto">
         {days.map((day) => (
           <button
             key={day}
             onClick={() => setActiveDay(day)}
             className={`py-2 px-4 font-semibold text-lg focus:outline-none ${
               activeDay === day
-                ? "text-black border-b-4 border-[#3dbc27]"
+                ? "text-black border-b-4 border-primary"
                 : "text-gray-500 hover:text-black"
             }`}
           >
@@ -112,7 +112,7 @@ const ScheduleAccordion: React.FC = () => {
       </div>
 
       {/* Schedule Display */}
-      <div className="bg-gray-100 border-2 border-[#3dbc27] p-6 rounded-md min-h-[150px]">
+      <div className="bg-gray-100 border-2 border-primary p-6 rounded-md min-h-[150px]">
         <h2 className="text-2xl text-black font-semibold mb-4">AIRING TIMES:</h2>
 
         {dailySchedule.length === 0 ? (

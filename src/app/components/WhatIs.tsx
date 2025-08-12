@@ -9,7 +9,7 @@ export default function WhatIs() {
         <div className="grid grid-cols-1 lg:grid-cols-[2fr_1.5fr] items-center mt-8">
           {/* Text Column */}
           <div className="px-6">
-            <div className="border-t-1 border-[#3dbc27]"></div>
+            <div className="border-t-1 border-primary"></div>
             <h2 className="text-4xl font-bold my-8 text-[#55595e]">
               WHAT IS "COMEDY ON THE LOOSE"?
             </h2>
@@ -35,10 +35,10 @@ export default function WhatIs() {
                 href="/about-us" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#3dbc27] text-white px-6 py-3 shadow hover:scale-105 transition-transform duration-200 my-8">
+                className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 shadow hover:scale-105 transition-transform duration-200 my-8">
                   READ MORE <FaArrowRight />
               </a>
-            <div className="border-t-1 border-[#3dbc27] mb-2"></div>
+            <div className="border-t-1 border-primary mb-2"></div>
           </div>
 
           {/* Image Column */}
@@ -55,7 +55,7 @@ export default function WhatIs() {
         <div className="w-full mt-8 pb-8">
           <div className="aspect-video mt-8 mx-4">
             <iframe
-              className="w-full h-full border-5 border-solid border-[#3dbc27]"
+              className="w-full h-full border-5 border-solid border-primary"
               src="https://www.youtube.com/embed/Oni4QTp7dEU"
               title="Comedy on the Loose Promo"
               frameBorder="0"

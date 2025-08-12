@@ -167,7 +167,7 @@ export default function OnlineEpisodes() {
           onClick={() => setFilter(null)}
           className={`px-3 py-1 rounded mr-2 text-sm ${
             filter === null
-              ? "bg-[#3dbc27] text-white"
+              ? "bg-primary text-white"
               : "bg-gray-200 text-gray-800"
           }`}
         >
@@ -178,7 +178,7 @@ export default function OnlineEpisodes() {
             key={s}
             onClick={() => setFilter(s)}
             className={`px-3 py-1 rounded mr-2 text-sm ${
-              filter === s ? "bg-[#3dbc27] text-white" : "bg-gray-200 text-gray-800"
+              filter === s ? "bg-primary text-white" : "bg-gray-200 text-gray-800"
             }`}
           >
             {s}
@@ -263,7 +263,7 @@ export default function OnlineEpisodes() {
                         <Link
                             href={ep.url}
                             target="_blank"
-                            className="flex items-center gap-2 px-4 py-2 bg-[#3dbc27] text-white rounded shadow hover:bg-[#36aa24] transition"
+                            className="flex items-center gap-2 px-4 py-2 bg-primary text-white rounded shadow hover:bg-primary-dark transition"
                         >
                             <FaPlay className="w-4 h-4" />
                             Watch Online

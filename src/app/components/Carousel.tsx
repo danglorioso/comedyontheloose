@@ -112,7 +112,7 @@ const Carousel: React.FC<CarouselProps> = ({
             {(slide.title || slide.subtitle || slide.buttonText) && (
               <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center">
                 {slide.title && (
-                  <h2 className="text-lg md:text-5xl text-white mb-4 drop-shadow bg-[#3DBC27] p-3">
+                  <h2 className="text-lg md:text-5xl text-white mb-4 drop-shadow bg-primary p-3">
                     {slide.title}
                   </h2>
                 )}
@@ -126,7 +126,7 @@ const Carousel: React.FC<CarouselProps> = ({
                     href={slide.buttonLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-6 py-3 bg-[#3DBC27] hover:bg-[#32A822] text-white font-semibold transition-all duration-300 transform hover:scale-105"
+                    className="px-6 py-3 bg-primary hover:bg-primary-dark text-white font-semibold transition-all duration-300 transform hover:scale-105"
                   >
                     {slide.buttonText}
                   </a>

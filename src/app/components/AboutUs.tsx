@@ -29,7 +29,7 @@ export default function AboutUs() {
 
         {/* Text */}
         <div className="flex flex-col justify-center order-1 md:order-none">
-            <div className="border-t-1 border-[#3dbc27]"></div>
+            <div className="border-t-1 border-primary"></div>
             <h2 className="text-4xl font-bold my-8 text-green-600">
                 What is "Comedy on the Loose"?
             </h2>
@@ -55,7 +55,7 @@ export default function AboutUs() {
     {/* BTS Section */}
     <div className="flex flex-col md:grid md:grid-cols-2 gap-12">
         <div className="flex flex-col justify-center order-1 md:order-none">
-            <div className="border-t-1 border-[#3dbc27]"></div>
+            <div className="border-t-1 border-primary"></div>
             <h2 className="text-4xl font-bold my-8 text-green-600">
                 Behind the Sketches
             </h2>
@@ -112,7 +112,7 @@ export default function AboutUs() {
 
         {/* Text */}
         <div className="flex flex-col justify-center order-2 md:order-none mt-12 md:mt-0">
-            <div className="border-t-1 border-[#3dbc27]"></div>
+            <div className="border-t-1 border-primary"></div>
             <h2 className="text-4xl font-bold my-8 text-green-600">
                 Production, Promotion, and Passion
             </h2>
@@ -137,7 +137,7 @@ export default function AboutUs() {
     {/* Why We Do It Section */}
     <div className="grid md:grid-cols-2 gap-0 md:gap-12">
         <div>
-            <div className="border-t-1 border-[#3dbc27]"></div>
+            <div className="border-t-1 border-primary"></div>
             <h2 className="text-4xl font-bold my-8 text-green-600">
                 Why We Do It
             </h2>

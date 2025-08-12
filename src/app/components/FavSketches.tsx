@@ -46,7 +46,7 @@ export default function FavoriteSketches() {
                 {season.videos.map((video, videoIdx) => (
                   <div
                     key={videoIdx}
-                    className="aspect-video border-2 border-[#3dbc27] overflow-hidden"
+                    className="aspect-video border-2 border-primary overflow-hidden"
                   >
                     <iframe
                       className="w-full h-full"

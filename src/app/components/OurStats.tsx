@@ -10,10 +10,10 @@ type Stat = {
 };
 
 const stats: Stat[] = [
-  { icon: <FaEye className="text-[#3dbc27] text-2xl" />, label: "VIEWS", value: 6257 },
-  { icon: <FaHeart className="text-[#3dbc27] text-2xl" />, label: "LIKES", value: 315 },
-  { icon: <FaClock className="text-[#3dbc27] text-2xl" />, label: "MINUTES OF CONTENT", value: 735 },
-  { icon: <FaHourglassHalf className="text-[#3dbc27] text-2xl" />, label: "HOURS OF FILMING", value: 300 },
+  { icon: <FaEye className="text-primary text-2xl" />, label: "VIEWS", value: 6257 },
+  { icon: <FaHeart className="text-primary text-2xl" />, label: "LIKES", value: 315 },
+  { icon: <FaClock className="text-primary text-2xl" />, label: "MINUTES OF CONTENT", value: 735 },
+  { icon: <FaHourglassHalf className="text-primary text-2xl" />, label: "HOURS OF FILMING", value: 300 },
 ];
 
 export default function OurStats() {
@@ -78,7 +78,7 @@ export default function OurStats() {
             {stats.map((stat, idx) => (
               <div
                 key={idx}
-                className="relative border-2 border-[#3dbc27] px-6 py-8"
+                className="relative border-2 border-primary px-6 py-8"
               >
                 <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 px-4">
                   {stat.icon}

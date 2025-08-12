@@ -2,14 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #ffffff;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --foreground: #000000;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,6 +10,35 @@
     --background: #ededed;
     --foreground: #ededed;
   }
+}
+
+/* Force primary colors to work in both light and dark mode */
+.bg-primary {
+  background-color: #3DBC27 !important;
+}
+
+.text-primary {
+  color: #3DBC27 !important;
+}
+
+.border-primary {
+  border-color: #3DBC27 !important;
+}
+
+.hover\:bg-primary:hover {
+  background-color: #3DBC27 !important;
+}
+
+.hover\:bg-primary-dark:hover {
+  background-color: #32A822 !important;
+}
+
+.bg-primary-dark {
+  background-color: #32A822 !important;
+}
+
+.bg-secondary {
+  background-color: #ffffff !important;
 }
 
 body {

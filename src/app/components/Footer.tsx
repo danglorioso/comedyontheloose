@@ -3,7 +3,7 @@ import SocialIcons from "./SocialIcons";
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-900 p-4 shadow-md border-t-4 border-[#3dbc27]">
+    <footer className="bg-slate-900 p-4 shadow-md border-t-4 border-primary">
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-10 p-4 items-start">
         {/* Column 1 - Logo */}
         <div className="md:col-span-1 flex justify-center md:justify-end items-center md:items-end">
