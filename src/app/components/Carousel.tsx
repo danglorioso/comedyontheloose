@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
+import Image from "next/image";
 
 interface Slide {
   imageUrl: string;
@@ -22,7 +23,23 @@ const Carousel: React.FC<CarouselProps> = ({
   autoPlayInterval = 5000,
 }) => {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
+  const [imagesLoaded, setImagesLoaded] = useState<boolean[]>(new Array(slides.length).fill(false));
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  // Preload images for smoother transitions
+  useEffect(() => {
+    slides.forEach((slide, index) => {
+      const img = new window.Image();
+      img.onload = () => {
+        setImagesLoaded(prev => {
+          const updated = [...prev];
+          updated[index] = true;
+          return updated;
+        });
+      };
+      img.src = slide.imageUrl;
+    });
+  }, [slides]);
 
   const resetAutoPlay = () => {
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
@@ -50,14 +67,18 @@ const Carousel: React.FC<CarouselProps> = ({
   return (
     <div
       className="relative w-full overflow-hidden mb-2"
-      // onMouseEnter={() => timeoutRef.current && clearTimeout(timeoutRef.current)}
+      onMouseEnter={() => timeoutRef.current && clearTimeout(timeoutRef.current)}
       onMouseLeave={resetAutoPlay}
     >
-      {/* Height controller */}
-      <img
+      {/* Height controller - matches image dimensions */}
+      <Image
         src={slides[currentIndex].imageUrl}
         alt="slide height reference"
-        className="w-full h-auto block"
+        width={0}
+        height={0}
+        sizes="100vw"
+        className="w-full h-auto"
+        priority={currentIndex === 0}
       />
 
       {/* Slide stack with fade transition */}
@@ -69,10 +90,23 @@ const Carousel: React.FC<CarouselProps> = ({
               index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
             }`}
           >
-            <img
+            {/* Show loading placeholder if image not loaded */}
+            {!imagesLoaded[index] && (
+              <div className="w-full h-full bg-gray-200 animate-pulse flex items-center justify-center">
+                <span className="text-gray-400"></span>
+              </div>
+            )}
+            
+            <Image
               src={slide.imageUrl}
               alt={slide.title || `Slide ${index + 1}`}
-              className="w-full h-full object-cover"
+              fill
+              className={`object-cover transition-opacity duration-300 ${
+                imagesLoaded[index] ? 'opacity-100' : 'opacity-0'
+              }`}
+              priority={index === 0}
+              loading={index <= 2 ? "eager" : "lazy"}
+              sizes="100vw"
             />
 
             {(slide.title || slide.subtitle || slide.buttonText) && (
@@ -90,7 +124,8 @@ const Carousel: React.FC<CarouselProps> = ({
                 {slide.buttonText && slide.buttonLink && (
                   <a
                     href={slide.buttonLink}
-                    target="_blank" // Open in new tab
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="px-6 py-3 bg-[#3DBC27] hover:bg-[#32A822] text-white font-semibold transition-all duration-300 transform hover:scale-105"
                   >
                     {slide.buttonText}
