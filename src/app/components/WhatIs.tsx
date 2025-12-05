@@ -15,25 +15,23 @@ export default function WhatIs() {
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
               Step into the world of laughter with <strong>Comedy on the Loose</strong>! 
-              Premiering in April 2016 by the duo Dan and Cam, Comedy on the Loose (COTL) 
-              proudly calls Littleton Community Television (LCTV) its exclusive home, standing as 
+              Premiering in April 2016 by Dan and Cam, Comedy on the Loose (COTL) 
+              proudly calls Littleton Community Television (LCTV) its home and is 
               the cable network's sole sketch-comedy television show.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
-              The journey kicked off in 2014 with homemade comedy videos, evolving into the 
-              creation of full-length episodes that keep the chuckles rolling for over three seasons. 
-              Bringing their comedic genius to life as stars and creators, Dan and Cam are the 
-              driving force of the show, wearing multiple hats as writers, set designers, directors, 
-              producers, and video editors, crafting a genuine two-person production. Their enduring 
-              passion for humor ignites the stage, propelling their comedic escapades forward.
+              The journey kicked off in 2014 with homemade comedy videos and quickly evolved into 
+              full-length episodes that continue to keep the laughs coming for three seasons. 
+              Bringing their comedic prowess to life as both stars and creators, Dan and Cam are the 
+              driving force of the show, taking on the role of writers, set designers, directors, 
+              producers, and video editors to craft a genuine two-person production.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
               Don't miss a beat – tune in for new full-length episodes released monthly on LCTV 
               and enjoy fresh sketches on our YouTube channel every Friday at 6:00pm.
             </p>
               <a 
-                href="/about-us" 
-                target="_blank" 
+                href="/about-us"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 shadow hover:scale-105 transition-transform duration-200 my-8">
                   READ MORE <FaArrowRight />
