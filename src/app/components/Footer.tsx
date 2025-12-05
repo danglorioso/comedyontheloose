@@ -4,7 +4,7 @@ import SocialIcons from "./SocialIcons";
 export default function Footer() {
   return (
     <footer className="bg-slate-900 p-4 shadow-md border-t-4 border-primary">
-      <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-10 p-4 items-start">
+      <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-16 p-4 items-start">
         {/* Column 1 - Logo */}
         <div className="md:col-span-1 flex justify-center md:justify-end items-center md:items-end">
           <img
@@ -26,7 +26,7 @@ export default function Footer() {
         </div>
 
         {/* Column 3 - Watch Us */}
-        <div className="md:col-span-2 text-center md:text-left">
+        <div className="md:col-span-2 text-center md:text-left md:ml-8">
           <h2 className="text-3xl text-white">Watch Us On</h2>
           <div className="flex flex-col md:flex-row items-center md:items-end justify-center md:justify-start md:gap-10 mt-2">
             <a
