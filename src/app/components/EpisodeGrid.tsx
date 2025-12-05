@@ -85,7 +85,7 @@ const episodes: Episode[] = [
             { name: "Autocorrect 2", link: "/sketches/autocorrect-2" },
             { name: "Spelling Bee", link: "/sketches/spelling-bee" },
         ],
-        url: "https://example.com/watch/s2e1",
+        url: "https://comedyontheloose.com/s2e1",
     },
     {
         season: 2,
@@ -99,7 +99,7 @@ const episodes: Episode[] = [
             { name: "No Questions Asked", link: "/sketches/no-questions-asked" },
             { name: "Old Weather", link: "/sketches/old-weather" },
         ],
-        url: "https://example.com/watch/s2e2",
+        url: "https://comedyontheloose.com/s2e2",
     },
     {
         season: 2,
@@ -113,7 +113,7 @@ const episodes: Episode[] = [
             { name: "Car Directions", link: "/sketches/car-directions" },
             { name: "Crossword Problems", link: "/sketches/crossword-problems" },
         ],
-        url: "https://example.com/watch/s2e3",
+        url: "https://comedyontheloose.com/s2e3",
     },
     {
         season: 2,
@@ -127,8 +127,7 @@ const episodes: Episode[] = [
             { name: "Communication Errors" },
             { name: "It’s Not Broken", link: "/sketches/its-not-broken" },
         ],
-        url: "https://example.com/watch/s2e4",
-    },
+        url: "https://comedyontheloose.com/s2e4",},
     {
         season: 3,
         episode: 1,
